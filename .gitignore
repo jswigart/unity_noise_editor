@@ -1,9 +1,9 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/Assets/AssetStoreTools*
+/NoiseNodeEditor/[Ll]ibrary/
+/NoiseNodeEditor/[Tt]emp/
+/NoiseNodeEditor/[Oo]bj/
+/NoiseNodeEditor/[Bb]uild/
+/NoiseNodeEditor/[Bb]uilds/
+/NoiseNodeEditor/Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
