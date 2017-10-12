@@ -9,5 +9,5 @@ And LibNoise.Unity
 https://github.com/ricardojmendez
 
 <p align="center">
-  <img alt="Node Editor Image" src="http://i.imgur.com/I3rDd7Y.jpg" width="60%"/>
+  <img alt="Node Editor Image" src="https://i.imgur.com/38bIxAx.png" width="60%"/>
 </p>
