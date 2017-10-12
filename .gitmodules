@@ -1,0 +1,3 @@
+[submodule "NoiseNodeEditor/Assets/LibNoise.Unity"]
+	path = NoiseNodeEditor/Assets/LibNoise.Unity
+	url = https://github.com/jswigart/LibNoise.Unity
