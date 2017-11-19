@@ -5,7 +5,7 @@ using NodeEditorFramework;
 namespace NodeEditorFramework.Standard
 {
 	[System.Serializable]
-	[Node (false, "Float/Display")]
+	[Node (true, "Float/Display")]
 	public class DisplayNode : Node 
 	{
 		public const string ID = "displayNode";

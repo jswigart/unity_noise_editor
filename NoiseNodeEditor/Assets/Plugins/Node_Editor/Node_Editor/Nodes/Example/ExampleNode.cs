@@ -4,8 +4,8 @@ using NodeEditorFramework.Utilities;
 
 namespace NodeEditorFramework.Standard
 {
-	[Node (false, "Example/Example Node")]
-	public class ExampleNode : Node 
+    [Node (true, "Example/Example Node")]
+    public class ExampleNode : Node 
 	{
 		public const string ID = "exampleNode";
 		public override string GetID { get { return ID; } }

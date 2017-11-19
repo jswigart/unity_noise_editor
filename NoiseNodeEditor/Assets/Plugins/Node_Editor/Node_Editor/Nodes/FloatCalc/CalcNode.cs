@@ -6,7 +6,7 @@ using NodeEditorFramework.Utilities;
 namespace NodeEditorFramework.Standard
 {
 	[System.Serializable]
-	[Node (false, "Float/Calculation")]
+	[Node (true, "Float/Calculation")]
 	public class CalcNode : Node 
 	{
 		public enum CalcType { Add, Substract, Multiply, Divide }

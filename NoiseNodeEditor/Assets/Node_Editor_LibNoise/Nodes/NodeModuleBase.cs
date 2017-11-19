@@ -15,6 +15,7 @@ namespace LibNoiseNodes
         {
             Terrain,
             Greyscale,
+            GreyscaleOpaque,
             RGB,
             RGBA,
         }
@@ -92,14 +93,17 @@ namespace LibNoiseNodes
 
             for( int i = 0; i < Inputs.Count; ++i )
             {
-                GUILayout.Label(Inputs[0].name);
+                GUILayout.Label(Inputs[i].name);
                 InputKnob(i);
             }
            
             GUILayout.EndVertical();
             GUILayout.BeginVertical();
 
-            Outputs[0].DisplayLayout();
+            for (int i = 0; i < Outputs.Count; ++i)
+            {
+                Outputs[i].DisplayLayout();
+            }
 
             GUILayout.EndVertical();
             GUILayout.EndHorizontal();
@@ -168,6 +172,9 @@ namespace LibNoiseNodes
                 case ColorMode.Greyscale:
                     tex = noise.GetTexture(LibNoise.GradientPresets.Grayscale);
                     break;
+                case ColorMode.GreyscaleOpaque:
+                    tex = noise.GetTexture(LibNoise.GradientPresets.GrayscaleOpaque);
+                    break;
                 case ColorMode.RGB:
                     tex = noise.GetTexture(LibNoise.GradientPresets.RGB);
                     break;
@@ -215,7 +222,10 @@ namespace LibNoiseNodes
             }
             NodeEditorFramework.NodeEditor.RepaintClients();
 
-            Outputs[0].SetValue<NodeModuleBase>(this);
+            for(int i = 0; i < Outputs.Count; ++i)
+            {
+                Outputs[i].SetValue<NodeModuleBase>(this);
+            }            
             return true;
         }
     }

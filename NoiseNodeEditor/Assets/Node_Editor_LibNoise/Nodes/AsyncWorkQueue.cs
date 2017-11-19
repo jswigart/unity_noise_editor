@@ -66,9 +66,7 @@ public class AsyncWorkQueue : MonoBehaviour
     {
         WorkUnit unit = stateInfo as WorkUnit;
         
-        Debug.LogFormat("Thread {0} starting work {1}", Thread.CurrentThread.Name, unit.Name);
         unit.DoWork();
-        Debug.LogFormat("Thread {0} finished work {1}", Thread.CurrentThread.Name, unit.Name);
     }
 
     class WorkUnit
