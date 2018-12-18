@@ -6,7 +6,7 @@ Based on node editor
 https://github.com/unagiHuman/Node_Editor
 
 And LibNoise.Unity
-https://github.com/ricardojmendez
+https://github.com/ricardojmendez/LibNoise.Unity
 
 <p align="center">
   <img alt="Node Editor Image" src="https://i.imgur.com/38bIxAx.png" width="60%"/>
